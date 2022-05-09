@@ -1,3 +1,3 @@
-FROM nginx
-COPY index.html /usr/share/nginx/html/index.html
-CMD ["nginx", "-g", "daemon off;"]
+FROM httpd
+COPY index.html /var/www/html/index.html
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
