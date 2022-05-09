@@ -1,15 +1,15 @@
 ---
-- name: samsoung play book
+- name: samsung play book
   hosts: masternode
   
 
   tasks:
-    - name: copy samsoung.yaml
+    - name: copy samsung.yaml
       copy:
-        src: samsoung.yaml
+        src: samsung.yaml
         dest: /home/vagrant/k8s
       become: yes
 
     - name: deployment
-      shell: 'kubectl apply -f /home/vagrant/k8s/samsoung.yaml'
+      shell: 'kubectl apply -f /home/vagrant/k8s/samsung.yaml'
       become: no
