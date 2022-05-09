@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: ss
-        image: brian24/testweb:green
+        image: nginx
         ports:
         - containerPort: 80
 ---
