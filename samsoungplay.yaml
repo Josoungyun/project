@@ -11,5 +11,5 @@
       become: yes
 
     - name: deployment
-      shell: 'kubectl apply -f samsoung.yaml'
+      shell: 'kubectl apply -f /home/vagrant/k8s/samsoung.yaml'
       become: no
