@@ -1,0 +1,13 @@
+---
+- name: samsoung play book
+  hosts: masternode
+  become: no
+
+  tasks:
+    - name: copy samsoung.yaml
+      copy:
+        src: samsoung.yaml
+        dest: /home/vagrant/k8s
+
+    - name: deployment
+      shell: 'kubectl apply -f samsoung.yaml'
