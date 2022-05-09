@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: ss
-        image: nginx
+        image: starjo5/samsung:1.0
         ports:
         - containerPort: 80
 ---
