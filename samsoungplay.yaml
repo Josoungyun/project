@@ -8,6 +8,7 @@
       copy:
         src: samsoung.yaml
         dest: /home/vagrant/k8s
+      become: yes
 
     - name: deployment
       shell: 'kubectl apply -f samsoung.yaml'
