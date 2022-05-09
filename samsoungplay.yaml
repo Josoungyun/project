@@ -10,4 +10,6 @@
         dest: /home/vagrant/k8s
 
     - name: deployment
+      become: yes
       shell: 'kubectl apply -f samsoung.yaml'
+      
