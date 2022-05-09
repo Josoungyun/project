@@ -1,7 +1,7 @@
 ---
 - name: samsoung play book
   hosts: masternode
-  become: no
+  
 
   tasks:
     - name: copy samsoung.yaml
