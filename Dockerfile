@@ -1,3 +1,3 @@
 FROM httpd
-COPY index.html /var/www/html/index.html
+ADD index.html /var/www/html/index.html
 CMD httpd -D FOREGROUND
