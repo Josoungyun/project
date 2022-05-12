@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: ss
-        image: starjo5/samsung:2.0
+        image: starjo5/samsung:1.0
         ports:
         - containerPort: 80
 ---
